@@ -1,0 +1,26 @@
+id,question,category,project,baseline,latency_sec,rag_mode,top_attribution_pct,top_chunk,response_length_words
+q01,What does the hybrid_retrieve function do in AgentBench-TR?,retrieval,agentbench_tr,base_rag,75.16,rag,92.96,README.md,247
+q02,How does the planner agent decompose queries into sub-tasks?,agent,agentbench_tr,base_rag,60.62,rag,88.66,agents/planner.py,220
+q03,What is the RRF fusion algorithm and how is it implemented?,retrieval,agentbench_tr,base_rag,64.17,rag,88.15,retrieval/hybrid.py,220
+q04,How does the validator agent perform claim-level grounding?,agent,agentbench_tr,base_rag,66.6,rag,54.02,README.md,226
+q05,What metrics are used to evaluate the AgentBench-TR pipeline,evaluation,agentbench_tr,base_rag,54.57,rag,97.96,README.md,173
+q06,How does AeroGuard predict Remaining Useful Life of aircraft,modeling,aeroguard,base_rag,91.25,rag,100.0,README.md,298
+q07,What feature engineering steps are applied to NASA CMAPSS se,features,aeroguard,base_rag,83.83,rag,98.28,README.md,268
+q08,How is the LSTM model architecture defined in AeroGuard?,modeling,aeroguard,base_rag,101.54,rag,97.64,README.md,231
+q09,What is the NASA asymmetric scoring function and why is it u,evaluation,aeroguard,base_rag,79.03,rag,98.65,src/evaluate.py,178
+q10,How does the Early Warning System classify engine alert leve,alert,aeroguard,base_rag,91.14,rag,54.7,notebooks/06_early_warning.py,221
+q11,What is the difference between DQN and SAC algorithms?,rl,highway_env,base_rag,85.34,rag,40.68,roundabout/train.py,244
+q12,How is the reward function designed for the highway environm,rl,highway_env,base_rag,124.39,rag,70.89,highway/reward_wrapper.py,375
+q13,What custom reward wrapper is used in the roundabout environ,rl,highway_env,base_rag,59.91,rag,91.16,roundabout/reward_wrapper.py,55
+q14,How does the racetrack environment use continuous action spa,rl,highway_env,base_rag,69.61,rag,54.0,racetrack/config.py,151
+q15,What observation type is used in the racetrack SAC agent?,rl,highway_env,base_rag,46.97,rag,59.21,racetrack/evaluate.py,47
+q16,How does BM25 sparse retrieval work in the RAG pipeline?,retrieval,general,base_rag,80.53,rag,60.03,retrieval/hybrid.py,218
+q17,What is TreeRAG hierarchical chunking and how does it differ,retrieval,general,base_rag,79.7,rag,35.26,tests/test_retrieval.py,203
+q18,How are Softmax attribution scores calculated for XAI output,xai,general,base_rag,109.88,rag,51.78,results/generate_figures.py,263
+q19,What is the CrossEncoder reranking step and why is it needed,retrieval,general,base_rag,84.98,rag,38.45,README.md,210
+q20,How does the rolling summary mechanism prevent context windo,memory,general,base_rag,24.82,general,27.61,notebooks/02_feature_engineering.py,204
+q21,How is the CausalSelfAttention mechanism implemented in minG,modeling,mingpt,base_rag,86.45,rag,80.8,mingpt/model.py,288
+q22,How does the GPT Trainer class handle the training loop in m,training,mingpt,base_rag,127.43,rag,77.34,mingpt/trainer.py,354
+q23,How does minGPT implement BPE tokenization?,nlp,mingpt,base_rag,105.32,rag,42.0,generate,205
+q24,How does the GPT model load pretrained GPT-2 weights from Hu,modeling,mingpt,base_rag,107.9,rag,81.84,tests/test_huggingface_import.py,175
+q25,How does the SortDataset work and what does it teach the GPT,training,mingpt,base_rag,116.78,rag,61.66,README.md,248
