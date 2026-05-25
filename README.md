@@ -25,9 +25,9 @@ I wanted something that runs entirely on my machine, understands my projects at 
 
 ## Screenshots
 
-![DevAssist Welcome Screen](results/screenshot_welcome.png)
+![DevAssist Welcome Screen](results/screenshot_welcome.jpeg)
 
-![DevAssist XAI Attribution Panel](results/screenshot_xai.png)
+![DevAssist XAI Attribution Panel](results/screenshot_xai.jpeg)
 
 ## System Architecture
 
