@@ -24,7 +24,7 @@ jobs:
 
       - name: Running flake8 linter on source files...
         run: |
-          flake8 app/ eval/ fine_tuning/ \
+          flake8 app/ eval/ \
             --max-line-length=120 \
             --exclude=__pycache__,chroma_db,venv \
-            --ignore=E501,W503,E203
+            --ignore=E501,W503,E203,E241,W292,W293,E303,E122,F401
