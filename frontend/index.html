@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevAssist</title>
+    <link rel="stylesheet" href="/static/vendor/github-dark.min.css" />
+    <link rel="stylesheet" href="/static/vendor/inter.css" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="/static/vendor/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <div class="brand">
+            <div class="brand-mark">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path
+                  d="M7 1L12.196 4V10L7 13L1.804 10V4L7 1Z"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  fill="none"
+                />
+              </svg>
+            </div>
+            <span class="brand-name">DevAssist</span>
+          </div>
+        </div>
+
+        <button class="new-chat-btn" id="newChatBtn">
+          <span class="new-chat-icon">+</span>
+          New chat
+        </button>
+
+        <div class="sessions-wrapper">
+          <div class="sessions-list" id="sessionsList"></div>
+        </div>
+
+        <div class="sidebar-footer">
+          <button class="reindex-btn" id="indexBtn">
+            <span class="reindex-icon">⟳</span>
+            Re-index codebase
+          </button>
+          <div class="index-status" id="indexStatus"></div>
+        </div>
+      </aside>
+
+      <main class="chat-panel">
+        <div class="topbar">
+          <span class="topbar-title" id="topbarTitle">DevAssist</span>
+          <div class="topbar-actions">
+            <span class="mode-badge" id="modeBadge"></span>
+            <button class="xai-btn" id="xaiToggle">
+              <span class="xai-btn-icon">⬡</span>
+              XAI
+            </button>
+          </div>
+        </div>
+
+        <div class="messages" id="messages">
+          <div class="welcome" id="welcome">
+            <div class="welcome-icon">⬡</div>
+            <h1 class="welcome-title">DevAssist</h1>
+            <p class="welcome-sub">Fully offline · TreeRAG · Explainable AI</p>
+          </div>
+        </div>
+
+        <div class="composer">
+          <div class="composer-box" id="composerBox">
+            <textarea
+              id="queryInput"
+              class="composer-input"
+              placeholder="Ask about your codebase..."
+              rows="1"
+            ></textarea>
+            <div class="composer-right">
+              <div class="model-selector" id="modelSelector">
+                <span class="model-dot"></span>
+                <span class="model-name">deepseek-coder:6.7b</span>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path
+                    d="M2 4L5 7L8 4"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <div class="model-dropdown" id="modelDropdown">
+                  <div
+                    class="model-option active"
+                    data-model="deepseek-coder:6.7b"
+                  >
+                    <span class="model-opt-dot"></span>deepseek-coder:6.7b
+                  </div>
+                </div>
+              </div>
+              <button class="composer-send" id="sendBtn">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path
+                    d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="composer-hint">
+            Enter to send · Shift+Enter for new line ·
+          </div>
+        </div>
+      </main>
+
+      <aside class="xai-panel" id="xaiPanel">
+        <div class="xai-header">
+          <span class="xai-label">XAI Attribution</span>
+          <div class="xai-header-right">
+            <span class="xai-chunk-count" id="xaiCount"></span>
+            <button class="xai-close-btn" id="xaiClose">✕</button>
+          </div>
+        </div>
+        <div class="xai-cards" id="xaiCards">
+          <div class="xai-empty">
+            Attribution scores appear after your first query.
+          </div>
+        </div>
+        <div class="xai-footer" id="xaiFooter"></div>
+      </aside>
+    </div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
