@@ -314,6 +314,16 @@ devassist/
 
 **SQLite for local persistence.** Chat history, session summaries, and saved memories are stored in a local SQLite database. A rolling summary mechanism compresses older context at a configurable message threshold, preventing context window overflow on long sessions without losing continuity.
 
+## Hardware Notes
+
+This project was developed and tested on Apple M1 16GB. A few constraints are worth noting for anyone running on similar hardware.
+
+The CrossEncoder reranker (ms-marco-MiniLM-L-6-v2) and nomic-embed-text embeddings run on CPU via MPS fallback on M1; inference is slower than on a CUDA GPU but fully functional. deepseek-coder:6.7b via Ollama uses approximately 6-8GB of RAM during active inference, leaving limited headroom for other applications on a 16GB machine. Benchmark runs across 25 questions took an average of 83 seconds per query under this constraint.
+
+bitsandbytes and some QLoRA fine-tuning dependencies in `fine_tuning/` are not compatible with M1 natively; that pipeline is scaffolded but requires a CUDA environment such as Google Colab T4 to run.
+
+For best performance on M1, keep `OLLAMA_FLASH_ATTENTION=1` and `OLLAMA_KEEP_ALIVE=-1` set before starting the server to avoid model reload overhead between queries.
+
 ## License
 
 MIT License. Copyright (c) 2026 Burak Ege Kaya. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, subject to the following conditions: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
