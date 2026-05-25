@@ -1,0 +1,45 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+
+# ChromaDB — local vector store, generated after indexing
+chroma_db/
+
+# Codebase index files — generated locally via repomix
+codebase/
+
+# Database — local session data
+devassist.db
+
+# Logs
+logs/
+
+# Ollama model files
+*.gguf
+*.bin
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Index debug output
+index_debug.json
+
+# Benchmark results — generated locally
+results/benchmark_base_rag_*.json
