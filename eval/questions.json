@@ -1,0 +1,347 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "question": "What does the hybrid_retrieve function do in AgentBench-TR?",
+      "category": "retrieval",
+      "project": "agentbench_tr",
+      "expected_keywords": [
+        "BM25",
+        "dense",
+        "RRF",
+        "CrossEncoder",
+        "attribution",
+        "hybrid"
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "How does the planner agent decompose queries into sub-tasks?",
+      "category": "agent",
+      "project": "agentbench_tr",
+      "expected_keywords": [
+        "planner",
+        "sub-task",
+        "decompose",
+        "agent",
+        "query",
+        "plan"
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "What is the RRF fusion algorithm and how is it implemented?",
+      "category": "retrieval",
+      "project": "agentbench_tr",
+      "expected_keywords": ["RRF", "reciprocal", "rank", "fusion", "score", "k"]
+    },
+    {
+      "id": "q04",
+      "question": "How does the validator agent perform claim-level grounding?",
+      "category": "agent",
+      "project": "agentbench_tr",
+      "expected_keywords": [
+        "validator",
+        "claim",
+        "grounding",
+        "verify",
+        "evidence",
+        "agent"
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "What metrics are used to evaluate the AgentBench-TR pipeline?",
+      "category": "evaluation",
+      "project": "agentbench_tr",
+      "expected_keywords": [
+        "MRR",
+        "Hit",
+        "ROUGE",
+        "precision",
+        "recall",
+        "metric"
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "How does AeroGuard predict Remaining Useful Life of aircraft engines?",
+      "category": "modeling",
+      "project": "aeroguard",
+      "expected_keywords": [
+        "RUL",
+        "LSTM",
+        "CMAPSS",
+        "predict",
+        "engine",
+        "remaining"
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "What feature engineering steps are applied to NASA CMAPSS sensor data?",
+      "category": "features",
+      "project": "aeroguard",
+      "expected_keywords": [
+        "CMAPSS",
+        "sensor",
+        "normalization",
+        "feature",
+        "rolling",
+        "window"
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "How is the LSTM model architecture defined in AeroGuard?",
+      "category": "modeling",
+      "project": "aeroguard",
+      "expected_keywords": [
+        "LSTM",
+        "layer",
+        "hidden",
+        "dropout",
+        "sequential",
+        "architecture"
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "What is the NASA asymmetric scoring function and why is it used?",
+      "category": "evaluation",
+      "project": "aeroguard",
+      "expected_keywords": [
+        "asymmetric",
+        "scoring",
+        "penalty",
+        "early",
+        "late",
+        "NASA"
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "How does the Early Warning System classify engine alert levels?",
+      "category": "alert",
+      "project": "aeroguard",
+      "expected_keywords": [
+        "alert",
+        "warning",
+        "threshold",
+        "classify",
+        "level",
+        "engine"
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "What is the difference between DQN and SAC algorithms?",
+      "category": "rl",
+      "project": "highway_env",
+      "expected_keywords": [
+        "DQN",
+        "SAC",
+        "discrete",
+        "continuous",
+        "policy",
+        "Q-value"
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "How is the reward function designed for the highway environment?",
+      "category": "rl",
+      "project": "highway_env",
+      "expected_keywords": [
+        "reward",
+        "collision",
+        "speed",
+        "lane",
+        "highway",
+        "function"
+      ]
+    },
+    {
+      "id": "q13",
+      "question": "What custom reward wrapper is used in the roundabout environment?",
+      "category": "rl",
+      "project": "highway_env",
+      "expected_keywords": [
+        "wrapper",
+        "roundabout",
+        "reward",
+        "custom",
+        "gym",
+        "env"
+      ]
+    },
+    {
+      "id": "q14",
+      "question": "How does the racetrack environment use continuous action space?",
+      "category": "rl",
+      "project": "highway_env",
+      "expected_keywords": [
+        "continuous",
+        "action",
+        "racetrack",
+        "SAC",
+        "steering",
+        "acceleration"
+      ]
+    },
+    {
+      "id": "q15",
+      "question": "What observation type is used in the racetrack SAC agent?",
+      "category": "rl",
+      "project": "highway_env",
+      "expected_keywords": [
+        "observation",
+        "kinematics",
+        "racetrack",
+        "SAC",
+        "OccupancyGrid",
+        "feature"
+      ]
+    },
+    {
+      "id": "q16",
+      "question": "How does BM25 sparse retrieval work in the RAG pipeline?",
+      "category": "retrieval",
+      "project": "general",
+      "expected_keywords": [
+        "BM25",
+        "sparse",
+        "TF-IDF",
+        "term",
+        "frequency",
+        "tokenize"
+      ]
+    },
+    {
+      "id": "q17",
+      "question": "What is TreeRAG hierarchical chunking and how does it differ from naive RAG?",
+      "category": "retrieval",
+      "project": "general",
+      "expected_keywords": [
+        "TreeRAG",
+        "parent",
+        "child",
+        "hierarchical",
+        "chunk",
+        "AST"
+      ]
+    },
+    {
+      "id": "q18",
+      "question": "How are Softmax attribution scores calculated for XAI output?",
+      "category": "xai",
+      "project": "general",
+      "expected_keywords": [
+        "softmax",
+        "attribution",
+        "score",
+        "exp",
+        "normalize",
+        "percentage"
+      ]
+    },
+    {
+      "id": "q19",
+      "question": "What is the CrossEncoder reranking step and why is it needed?",
+      "category": "retrieval",
+      "project": "general",
+      "expected_keywords": [
+        "CrossEncoder",
+        "rerank",
+        "similarity",
+        "pair",
+        "score",
+        "ms-marco"
+      ]
+    },
+    {
+      "id": "q20",
+      "question": "How does the rolling summary mechanism prevent context window overflow?",
+      "category": "memory",
+      "project": "general",
+      "expected_keywords": [
+        "summary",
+        "rolling",
+        "threshold",
+        "compress",
+        "context",
+        "window"
+      ]
+    },
+    {
+      "id": "q21",
+      "question": "How is the CausalSelfAttention mechanism implemented in minGPT?",
+      "category": "modeling",
+      "project": "mingpt",
+      "expected_keywords": [
+        "attention",
+        "query",
+        "key",
+        "value",
+        "mask",
+        "softmax"
+      ]
+    },
+    {
+      "id": "q22",
+      "question": "How does the GPT Trainer class handle the training loop in minGPT?",
+      "category": "training",
+      "project": "mingpt",
+      "expected_keywords": [
+        "Trainer",
+        "optimizer",
+        "DataLoader",
+        "batch",
+        "loss",
+        "callback"
+      ]
+    },
+    {
+      "id": "q23",
+      "question": "How does minGPT implement BPE tokenization?",
+      "category": "nlp",
+      "project": "mingpt",
+      "expected_keywords": [
+        "BPE",
+        "encoder",
+        "byte",
+        "token",
+        "merge",
+        "unicode"
+      ]
+    },
+    {
+      "id": "q24",
+      "question": "How does the GPT model load pretrained GPT-2 weights from HuggingFace?",
+      "category": "modeling",
+      "project": "mingpt",
+      "expected_keywords": [
+        "from_pretrained",
+        "GPT2LMHeadModel",
+        "state_dict",
+        "transpose",
+        "weights",
+        "copy"
+      ]
+    },
+    {
+      "id": "q25",
+      "question": "How does the SortDataset work and what does it teach the GPT model?",
+      "category": "training",
+      "project": "mingpt",
+      "expected_keywords": [
+        "SortDataset",
+        "sort",
+        "sequence",
+        "input",
+        "output",
+        "rejection"
+      ]
+    }
+  ]
+}
